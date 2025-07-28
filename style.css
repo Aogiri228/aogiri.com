@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #1a1a1e, #0f3460);
+    display: flex;
+    justify-content: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('https://i.imgur.com/zfTXcIB.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Zen Kurenaido' sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #533483);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-items: center;
+    font-family: 'Zen Kurenaido' sans-serif;
+}
+
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease;
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* делает изображение круглым */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border: 4px solid #052038;
+}
+
+.avatar img:hover {
+    transform: scale(1.1);
+}
+
+.card h1 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #ff4ecd, 0 0 40px #9e00ff;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #122763;
+    text-decoration: none;
+    font-weight: bold;
+    transform: color 0.3s ease;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: all 0.3 ease;
+}
+
+.socials a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    text-shadow: 0 0 8px #ff4ecd;
+}
+
+.socials img {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
